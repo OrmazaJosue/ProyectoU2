@@ -12,7 +12,7 @@ const Layout = () => {
       </main>
 
       <footer className='bg-gray-800 py-3 md:px-8 px-4 text-center text-white'>
-        <p>&copy; {new Date().getFullYear()} Generador de certificados. Proyecto de Arquitectura de Software - grupo2.</p>
+        <p>&copy; {new Date().getFullYear()} Generador de certificados. Proyecto de Arquitectura de Software - Grupo 2.</p>
       </footer>
     </div>
   );
