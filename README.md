@@ -1,10 +1,10 @@
 # Certificate Generator
 
-Certificate Generator is a web application designed to automate the process of generating and managing certificates for various courses. The application allows users to request certificates, which can then be approved and generated in PDF format. The generated certificates are stored on Google Drive and can be accessed via a link.
+Generador de Certificados es una aplicación web diseñada para automatizar el proceso de generación y gestión de certificados para varios cursos. La aplicación permite a los usuarios solicitar certificados, que luego pueden ser aprobados y generados en formato PDF. Los certificados generados se almacenan en Google Drive y se pueden acceder a través de un enlace.
 
 ## Live Demo
 
-Check out the live website : [Certificate Generator](https://certificate-generator1.netlify.app)
+Check out the live website : [Certificate Generator](https://github.com/OrmazaJosue/ProyectoU2.git)
 
 ## Features
 
@@ -17,15 +17,15 @@ Check out the live website : [Certificate Generator](https://certificate-generat
 
 ## Technologies Used
 
-[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](#) &nbsp;&nbsp; 
-[![Redux](https://img.shields.io/badge/Redux-593D88?logo=redux&logoColor=white)](#) &nbsp;&nbsp; 
-[![Node.js](https://img.shields.io/badge/Node%20js-339933?logo=nodedotjs&logoColor=white)](#) &nbsp;&nbsp; 
-[![Express.js](https://img.shields.io/badge/Express%20js-000000?logo=express&logoColor=white)](#) &nbsp;&nbsp; 
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)](#) &nbsp;&nbsp; 
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](#) &nbsp;&nbsp; 
-[![JavaScript](https://img.shields.io/badge/JavaScript-323330?logo=javascript&logoColor=F7DF1E)](#) &nbsp;&nbsp; 
-[![Axios](https://img.shields.io/badge/axios-671ddf?&logo=axios&logoColor=white)](#) &nbsp;&nbsp; 
-[![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white)](#) &nbsp;&nbsp; 
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](#) &nbsp;&nbsp;
+[![Redux](https://img.shields.io/badge/Redux-593D88?logo=redux&logoColor=white)](#) &nbsp;&nbsp;
+[![Node.js](https://img.shields.io/badge/Node%20js-339933?logo=nodedotjs&logoColor=white)](#) &nbsp;&nbsp;
+[![Express.js](https://img.shields.io/badge/Express%20js-000000?logo=express&logoColor=white)](#) &nbsp;&nbsp;
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)](#) &nbsp;&nbsp;
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](#) &nbsp;&nbsp;
+[![JavaScript](https://img.shields.io/badge/JavaScript-323330?logo=javascript&logoColor=F7DF1E)](#) &nbsp;&nbsp;
+[![Axios](https://img.shields.io/badge/axios-671ddf?&logo=axios&logoColor=white)](#) &nbsp;&nbsp;
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white)](#) &nbsp;&nbsp;
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?logo=vite&logoColor=FFD62E)](#)
 
 ### Frontend
@@ -75,10 +75,12 @@ To enable Google Drive integration, you need to set up Google Drive API credenti
    git clone https://github.com/yourusername/certificate_generator.git
    cd certificate_generator/server
 
+   ```
+
 2. Install dependencies:
-```npm install```
-OR
-```yarn```
+   `npm install`
+   OR
+   `yarn`
 
 3. Configure environment variables: Create a .env file in the server directory with the following variables:
 
@@ -90,28 +92,28 @@ OR
    - PORT=<PORT_NO>
 
 4. Start the server:
-```npm start```
-OR
-```yarn start```
+   `npm start`
+   OR
+   `yarn start`
 
 ### Frontend Setup
 
 1. Navigate to the client directory:
-cd ../client
+   cd ../client
 
 2. Install dependencies:
-```npm install```
-OR
-```yarn```
+   `npm install`
+   OR
+   `yarn`
 
 3. Create a .env file in the client directory with the following variable(s):
 
    - BASE_URL=<your_base_url>
 
 4. Start the development server:
-```npm run dev```
-OR
-```yarn dev```
+   `npm run dev`
+   OR
+   `yarn dev`
 
 ## API Endpoints
 
@@ -124,16 +126,3 @@ OR
 - PUT `/api/certificates/create/:id`: Approve a certificate request and generate the certificate PDF, saving the PDF on Google Drive.
 
 - DELETE `/api/certificates/reject/:id`: Reject a certificate request.
-
-## Contribution Guidelines
-
-Feel free to contribute to the Repo:
-
-1. Fork the repository.
-2. Create a new branch (git checkout -b feature-branch).
-3. Make your changes and commit them (git commit -m 'Add new feature').
-4. Push to the branch (git push origin feature-branch).
-5. Open a Pull Request.
-<br/><br/>
-
-## Please Star⭐=>🌟 the Repo if you like the Code, UI, or anything about the Project
