@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PrimaryButton = React.memo(({ title, isLoading, ...props }) => {
   return (
@@ -12,5 +13,11 @@ const PrimaryButton = React.memo(({ title, isLoading, ...props }) => {
     </button>
   );
 });
+PrimaryButton.displayName = 'PrimaryButton';
+
+PrimaryButton.propTypes = {
+  title: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool,
+};
 
 export default PrimaryButton;

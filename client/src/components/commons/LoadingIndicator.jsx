@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const LoadingIndicator = React.memo(({ loadingText }) => {
   return (
@@ -14,5 +15,11 @@ const LoadingIndicator = React.memo(({ loadingText }) => {
     </div>
   );
 });
+LoadingIndicator.displayName = 'LoadingIndicator';
+
+LoadingIndicator.propTypes = {
+  loadingText: PropTypes.string.isRequired,
+};
+
 
 export default LoadingIndicator;
