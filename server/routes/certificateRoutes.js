@@ -2,21 +2,13 @@ const express = require('express');
 const router = express.Router();
 const certificateControllers = require('../controllers/certificateControllers');
 
-router.get('/get/:_id', async (req, res) => {
-  try {
-    res.status(200).json(`Root API called...   ID =>  ${req.params._id}`);
-  } catch (error) {
-    res.status(500).json({ error: `Root API error !!!` });
-  }
-});
-
 // Route for creating a new certificate request
-router.post('http://localhost:3000/certificates/requests', certificateControllers.createCertificateRequest);
+router.post('/requests', certificateControllers.createCertificateRequest);
 
 // Route for retrieving all certificate requests
 router.get('/requests', certificateControllers.getAllRequests);
 
-// Route for generating a new certificate(updating the pending Certificate Request)
+// Route for generating a new certificate (updating the pending Certificate Request)
 router.put('/create/:_id', certificateControllers.generateCertificate);
 
 // Route for retrieving all certificates
